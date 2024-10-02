@@ -35,6 +35,7 @@ contrasennadelservidordecontabilidad = "ersaer2s" # No tiene regla de escritura
 contrasennaDelServidorDeContabilidad = "ersaer2s" # CamelCast *
 contrasenna_del_servidor_de_contabilidad = "ersaer2s" # Snake *
 contrasenna_sc = "ersaer2s" # Contraseña del servidor de contabilidad
-csc = "ersaer2s" # Contraseña del servidor de contabilidad
+csc = "ersaer2s" # Muy corta y no da información
+passwordSC = "ersaer2s"
 
 

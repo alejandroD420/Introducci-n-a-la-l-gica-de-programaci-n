@@ -12,6 +12,17 @@ if edad >= 18:
 else:
     print("Eres menor de edad")
     
+
+
+#EJEMPLO DE IF - ELSE
+edad = 18
+
+if edad >= 18:
+    print("Eres Mayor de edad") #Bloque si la condicion es verdadera
+else:
+    print("Eres menor de edad") #Bloque si la condicion es falsa
+
+
 # Ejemplo if, elif y else 
 nota = 5
 

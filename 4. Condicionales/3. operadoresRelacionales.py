@@ -14,10 +14,16 @@ if a != b:
     print("a y b son distintos")
 else:
     print("a y b son iguales")
-    
+
 # Mayor que (>)
 
 if a > b:
     print("a es mayor que b")
 else:
     print("a no es mayor que b")
+
+
+if a < b:
+    print("a es menor que b")
+else:
+    print("a no es menors que b")
