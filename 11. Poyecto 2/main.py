@@ -12,6 +12,11 @@ peliculas = [
 ]
 
 def mostrar_todas_peliculas(peliculas):
+    """
+    Muestra todas las películas en la lista de películas.
+    :param peliculas: La lista de películas.
+    :type peliculas: list[dict]
+    """
     print("----- Lista de Peliculas -----")
     for pelicula in peliculas:
         print(f"Nombre: {pelicula['nombre']}")
@@ -25,6 +30,14 @@ def mostrar_todas_peliculas(peliculas):
         print("------------------------------")
 
 def actualizar_una_pelicula(id_actulizar,peliculas):
+    """
+    Actualiza una película en la lista de películas.
+    
+    :param id_actulizar: El índice de la película a actualizar.
+    :type id_actulizar: int
+    :param peliculas: La lista de películas.
+    :type peliculas: list[dict]
+    """
     for indice, pelicula in enumerate(peliculas):
             if id_actulizar == indice:
                 print("Película encontrada")
@@ -57,6 +70,12 @@ def actualizar_una_pelicula(id_actulizar,peliculas):
                     print("Error: La duración debe ser un número entero.")
 
 def crear_una_pelicula(peliculas):
+    """
+    Crea una nueva película y la agrega a la lista de películas.
+    
+    :param peliculas: La lista de películas.
+    :type peliculas: list[dict]
+    """
     print("Crear pelicula")
     try:
         nombre = input(f"Ingrese Nombre de la película: ")
@@ -87,6 +106,14 @@ def crear_una_pelicula(peliculas):
         print("Error: La duración debe ser un número entero.")
 
 def eliminar_pelicula(id_eliminar,peliculas):
+    """
+    Elimina una película de la lista de películas.
+    
+    :param id_eliminar: El índice de la película a eliminar.
+    :type id_eliminar: int
+    :param peliculas: La lista de películas.
+    :type peliculas: list[dict]
+    """
     try:
         peliculas.pop(id_eliminar)
         print("Película eliminada exitosamente.")
@@ -94,6 +121,14 @@ def eliminar_pelicula(id_eliminar,peliculas):
         print("No se encontró la película con el índice proporcionado.")
     
 def buscar_por_id(id_buscar,peliculas):
+    """
+    Busca una película por su ID en la lista de películas.
+    
+    :param id_buscar: El índice de la película a buscar.
+    :type id_buscar: int
+    :param peliculas: La lista de películas.
+    :type peliculas: list[dict]
+    """
     try: 
         for indice, pelicula in enumerate(peliculas):
             if id_buscar == indice:
